@@ -68,7 +68,7 @@
       "displayName": "Git Repo URL",
       "description": "The URL to your GIT repo.",
       "required": true,
-      "value": "https://github.com/rstens/backup-container/backup-container.git"
+      "value": "https://github.com/rstens/backup-container.git"
     },
     {
       "name": "GIT_REF",
