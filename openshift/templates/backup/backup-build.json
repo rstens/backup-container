@@ -61,14 +61,14 @@
       "displayName": "Name",
       "description": "The name assigned to all of the resources.  Use 'backup-{database name}' depending on your database provider",
       "required": true,
-      "value": "backup-postgres"
+      "value": "invasivesbc-api-backup"
     },
     {
       "name": "GIT_REPO_URL",
       "displayName": "Git Repo URL",
       "description": "The URL to your GIT repo.",
       "required": true,
-      "value": "https://github.com/BCDevOps/backup-container.git"
+      "value": "https://github.com/rstens/backup-container/backup-container.git"
     },
     {
       "name": "GIT_REF",
