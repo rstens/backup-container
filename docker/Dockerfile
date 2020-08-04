@@ -37,6 +37,9 @@ RUN echo $TZ > /etc/timezone
 ENV PATH /opt/app-root/src/bin:/opt/app-root/bin:${PATH}
 ENV APP_DATA /opt/app-root
 ENV APP_ROOT /opt/app-root
+ENV STI_SCRIPTS_PATH /usr/libexec/s2i
+ENV STI_SCRIPTS_URL image:///usr/libexec/s2i
+
 # Important - Reset to the base image's user account.
 USER 26
 
