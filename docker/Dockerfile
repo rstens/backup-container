@@ -34,7 +34,9 @@ RUN chmod ug+x /usr/bin/go-crond
 # --------------------------------------------------------------------------------------------------------
 RUN echo $TZ > /etc/timezone
 # ========================================================================================================
-
+ENV PATH /opt/app-root/src/bin:/opt/app-root/bin:${PATH}
+ENV APP_DATA /opt/app-root
+ENV APP_ROOT /opt/app-root
 # Important - Reset to the base image's user account.
 USER 26
 
