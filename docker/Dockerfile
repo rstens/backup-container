@@ -38,5 +38,8 @@ RUN echo $TZ > /etc/timezone
 # Important - Reset to the base image's user account.
 USER 26
 
+ENTRYPOINT ["container-entrypoint"]
+CMD ["run-postgresql"]
+
 # Set the default CMD.
 CMD sh /backup.sh
